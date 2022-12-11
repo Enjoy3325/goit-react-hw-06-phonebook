@@ -15,11 +15,11 @@ const contactsSlice = createSlice({
   initialState,
   reducers: {
     addContacts(state, action) {
-      state.push(action.payload);
+      state.contacts.push(action.payload);
     },
     deleteContacts(state, action) {
       state.contacts = state.contacts.filter(
-        contact => contact.id !== contact.payload
+        contact => contact.id !== action.payload
       );
     },
     chengeFilter(state, action) {
