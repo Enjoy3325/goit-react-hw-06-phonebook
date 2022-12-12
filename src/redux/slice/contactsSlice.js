@@ -10,6 +10,7 @@ const initialState = {
 
   filter: '',
 };
+
 const contactsSlice = createSlice({
   name: 'contacts',
   initialState,
@@ -33,3 +34,6 @@ export const { addContacts, deleteContacts, chengeFilter } =
   contactsSlice.actions;
 // Редюсер слайсу
 export const contactsReducer = contactsSlice.reducer;
+
+export const getFilter = state => state.contacts.filter;
+export const getContacts = state => state.contacts.contacts;

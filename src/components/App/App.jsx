@@ -65,10 +65,7 @@ export const App = () => {
         <div>
           <Filter />
           <h2>Contacts</h2>
-          <ListContacts
-          // contacts={filterContact()}
-          // handlDeleteContacts={handlDeleteContacts}
-          />
+          <ListContacts />
         </div>
       </section>
     </Wrapper>
