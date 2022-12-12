@@ -1,9 +1,6 @@
+import { getFilter, getContacts } from 'redux/selectors';
 import { useSelector, useDispatch } from 'react-redux';
-import {
-  deleteContacts,
-  getContacts,
-  getFilter,
-} from 'redux/slice/contactsSlice';
+import { deleteContacts } from 'redux/slice/contactsSlice';
 import { BoxList } from './ListContacts.styled';
 import { nanoid } from 'nanoid';
 import { CardContact } from '../CardContact/CardContact';

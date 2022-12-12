@@ -1,6 +1,7 @@
+import { getContacts } from 'redux/selectors';
 import { useDispatch, useSelector } from 'react-redux';
 import { nanoid } from 'nanoid';
-import { addContacts, getContacts } from 'redux/slice/contactsSlice';
+import { addContacts } from 'redux/slice/contactsSlice';
 import {
   SectionForm,
   Form,
